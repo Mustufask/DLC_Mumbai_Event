@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background: #000;
+  color: white;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#sup {
+  top: -7px;
+}
+
+h3 {
+  letter-spacing: 3px;
+}
+
+.notify-card {
+  position: relative;
+  padding-top:20px;
+  display: inline-block;
+}
+
+.notify-badge {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  text-align: center;
+  color: gray;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+.forum {
+  font-family: 'Great Vibes', cursive;
+}
+
+.light-red {
+  background-color: rgb(236, 60, 60) !important;
+  opacity: 0.7;
+}
+
+.dark-red {
+  background-color: #72000e !important;
+}
+
+#speaker {
+  background-color: #72000e !important;
+  opacity: 0.7;
+}
+
+.speaker-cards {
+  background-image: url('https://dellaleaders.com/images/assets/background_img.png');
+  background-size: contain;
+}
+
+
+/* For desktop */
+@media (min-width: 800px) {
+  /* Styles for desktop */
+  .venue {
+    display: inline-flex;
+    justify-content: end;
+  }
+
+}
+
+/* For mobile */
+@media (max-width: 480px) {
+  /* Styles for mobile */
+  .venue {
+    display: inline-flex;
+    justify-content: end;
+  }
+
+  .jimmy-card {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cards-container {
+    font-size: 8px;
+  }
+}

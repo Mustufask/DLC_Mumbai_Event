@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DLC_Mumbai</title>
+
+    <!-- Bootstrap css for responsive web design-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Google fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300&display=swap"
+        rel="stylesheet"> -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,400;0,500;1,400&family=Poppins:wght@300&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            box-sizing: border-box;
+            background: white !important;
+            color: white !important;
+            text-align: center !important;
+            font-family: 'Poppins', sans-serif !important;
+            /* font-family: 'Montserrat Alternates', sans-serif; */
+        }
+
+        a {
+            text-decoration: none !important;
+            color: white !important;
+        }
+
+        #sup {
+            top: -7px;
+        }
+
+        .dlc_talk_img {
+            max-width: 290px !important;
+            overflow: hidden;
+        }
+
+        h5 {
+            font-size: 0.7rem !important;
+            font-weight: 900 !important;
+        }
+
+        .card-text {
+            font-size: 0.5rem !important;
+        }
+
+        .notify-card {
+            position: relative;
+            padding-top: 20px;
+            display: inline-block;
+        }
+
+        .notify-badge {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            text-align: center;
+            color: gray;
+            padding: 5px 10px;
+            font-size: 20px;
+        }
+
+        .forum {
+            font-family: 'Great Vibes', cursive !important;
+        }
+
+        .light-red {
+            background-color: rgb(236, 60, 60) !important;
+            font-size: 12px;
+        }
+
+        .dark-red {
+            background-color: #72000d !important;
+        }
+
+        #speaker {
+            background-color: #72000d8f !important;
+        }
+
+        .speakers {
+            /* background-image: url("https://dellaleaders.com/images/assets/background_img.png") !important; */
+            background-size: contain;
+        }
+
+        .speaker-card {
+            background-color: rgb(35, 35, 35) !important;
+            font-size: 12px !important;
+        }
+
+
+        /* For desktop */
+        @media (max-width: 800px) {
+
+            /* Styles for desktop */
+            h5 {
+                font-size: 18px !important;
+            }
+
+            .card-text {
+                font-size: 10px !important;
+            }
+
+            .dlc_talk_img {
+                max-width: 295px !important;
+                margin-top: 5px !important;
+            }
+
+            .speaker-img {
+                max-width: 150px !important;
+            }
+
+            .card-container {
+                justify-content: center !important;
+            }
+        }
+
+        /* For mobile */
+        @media (max-width: 570px) {
+
+            /* Styles for mobile */
+            .speaker-card {
+                font-size: 12px !important;
+            }
+
+            .card-container {
+                width: 50% !important;
+            }
+
+            h5 {
+                font-size: 15px !important;
+            }
+
+            .dlc_talk_img {
+                max-width: 165px !important;
+                margin-top: 15px !important;
+            }
+        }
+
+        @media (max-width: 670px) {
+
+            /* Styles for mobile */
+            .links-container {
+                /* width: 50% !important; */
+                font-size: 7px !important;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container" style="max-width: 800px; background-color: black;">
+
+        <!-- Header -->
+        <header class="mt-5 pt-3">
+            <h3 class="fw-bold font-monospace text-secondary">THE WORLD’S 1<sup id="sup">ST</sup> BUSINESS PLATFORM</h3>
+
+            <!-- Logo's -->
+            <nav class="navbar navbar-light justify-content-between m-0">
+                <!-- DLC_Mumbai -->
+                <a href="#" class="navbar-brand logo m-0">
+                    <img class="text-center img-fluid" src="https://dellaleaders.com/images/assets/DLC_mumbai.png"
+                        alt="DLC_Mumbai_LOGO" height="180" width="110">
+                </a>
+
+                <!-- DLC_workshop -->
+                <a href="#" class="navbar-brand logo m-0">
+                    <img class="text-center img-fluid" src="https://dellaleaders.com/images/assets/Dlc_workshop.png"
+                        alt="DLC_workshop" height="210" width="180">
+                </a>
+            </nav>
+        </header>
+
+
+        <!-- Main -->
+        <main>
+            <!-- Main-upper -->
+            <div class="speakers"
+                style="background-image:url(https://dellaleaders.com/images/assets/background_img.png)">
+                <h4 class="bg-danger fw-bold py-2 mx-0 mb-3 light-red fs-4">DISRUPT · INNOVATE · RECREATE</h4>
+
+                <!-- Speakers -->
+                <span class="d-inline-block fs-3 fw-bold p-3 mt-2 text-warning forum" id="speaker">Speakers</span>
+
+                <!-- Cards -->
+                <section class="speaker-cards pt-5 pb-5 shadow-sm">
+
+                    <div class="row cards-container justify-content-center px-3">
+
+                        <!--David meltzer-->
+                        <div class="col-sm-6 col-md card-container mb-3 d-flex align-items-stretch">
+                            <div class="card bg-transparent m-0">
+                                <img src="https://dellaleaders.com/images/assets/David_Meltzer.png"
+                                    class="card-img-top img-fluid speaker-img" alt="David_Meltzer">
+                                <div class="body d-flex flex-column m-0 py-2">
+                                    <h5 class="card-title">DAVID MELTZER</h5>
+                                    <p class="card-text mb-4"><b>Founder</b> <br>
+                                        <span class="text-warning">
+                                            Sports 1 Marketing <br> DLC Member <br> New York Chapter
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--S 'Venky' Venkatesh-->
+                        <div class="col-sm-6 col-md card-container mb-3 d-flex align-items-stretch">
+                            <div class="card bg-transparent align-items-center">
+                                <img src="https://dellaleaders.com/images/assets/S_‘Venky’_Venkatesh.png"
+                                    class="card-img-top img-fluid speaker-img" alt="Venkatesh">
+                                <div class="body d-flex flex-column m-0 py-2">
+                                    <h5 class="card-title">S ‘VENKY’ VENKATESH</h5>
+                                    <p class="card-text mb-4">Member-Group Management
+                                        Board & President-Group HR <br><span class="text-warning">
+                                            RPG Group <br> Mumbai Chapter
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Polina Groman-->
+                        <div class="col-sm-6 col-md card-container mb-3 d-flex align-items-stretch">
+                            <div class="card bg-transparent">
+                                <img src="https://dellaleaders.com/images/assets/Polina_Groman.png"
+                                    class="card-img-top img-fluid speaker-img" alt="Polina_Groman">
+                                <div class="body d-flex flex-column m-0 py-2">
+                                    <h5 class="card-title">POLINA GROMAN</h5>
+                                    <p class="card-text mb-4">Chief Happiness Officer <br>
+                                        <span class="text-warning">
+                                            Gro International <br> DLC Member <br> New York Chapter
+                                        </span>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Sanjay Muthal-->
+                        <div class="col-sm-6 col-md card-container mb-3 d-flex align-items-stretch">
+                            <div class="card bg-transparent align-items-center">
+                                <img src="https://dellaleaders.com/images/assets/Sanjay_Muthal.png"
+                                    class="card-img-top img-fluid speaker-img" alt="Card Image">
+                                <div class="body d-flex flex-column m-0 py-2">
+                                    <h5 class="card-title">SANJAY MUTHAL</h5>
+                                    <p class="card-text mb-4">CEO <br>
+                                        <span class="text-warning">
+                                            Kontempore Leadership & Business Solutions <br> DLC Member <br> Mumbai
+                                            Chapter
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Jimmy Mistry-->
+                        <div class="col-sm-6 col-md card-container mb-3 d-flex align-items-stretch">
+                            <div class="card bg-transparent jimmy-card">
+                                <img src="https://dellaleaders.com/images/assets/jimmy.png"
+                                    class="card-img-top img-fluid speaker-img" alt="Jimmy-mistry">
+                                <div class="body d-flex flex-column m-0 py-2">
+                                    <h5 class="card-title">JIMMY MISTRY</h5>
+                                    <p class="card-text mb-4">Founder & CEO <br>
+                                        <span class="text-warning">
+                                            Della Leaders Club
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <p class="text-warning fw-bold fs-5">DLC is A Global community of Entrepreneurs and Young Leaders
+                    created to build
+                    priceless relationships
+                    with top Leaders in any industry, any type of business, anywhere in the world.</p>
+
+                <hr class="m-3 mx-5 w-50 d-inline-block bg-danger border-3 border-top border-danger">
+
+                <p class="fw-bold fs-4">In the age of disruption, Disrupt • Innovate • Recreate
+                    DLC Workshop is all set to bring a unique concoction of business and lifestyle to our day-to-day
+                    life with domain experts spread across the verticals with immersive, interactive learning
+                    experiences.</p>
+
+                <hr class="m-3 mx-5 w-50 d-inline-block bg-danger border-3 border-top border-danger">
+            </div>
+
+
+            <!-- Main-middle -->
+            <div class="main-middle">
+                <p class="bg-danger fs-5 p-3 dark-red"><span class="text-warning">FOUNDER JIMMY MISTRY</span> CORDIALLY
+                    INVITES YOU ALL TO
+                    EXPERIENCE THE NEW AND UNIQUE EXPERIENTIAL LEARNING REVOLUTION.</p>
+
+                <!-- Venue-top -->
+                <div class="venue-top mt-5">
+                    <div class="row align-items-center px-md-3">
+                        <div class="col-8 col-sm-8 text-start">
+                            <p class="m-0">Speaker Sessions Start at 7:00 pm followed by</p>
+
+                            <p class="text-warning forum fs-2 m-0">Dinner, Drinks & Live Music</p>
+
+                            <p class="fw-bold m-0">Venue: DLC HQ & Studios, Della Tower, Dadar E, Mumbai</p>
+                        </div>
+
+                        <div class="col-4 col-sm-4 text-end venue d-inline-flex justify-content-end align-items-center">
+                            <div class="">
+                                <span class="fw-bold font-monospace m-0 display-5">
+                                    26<br>
+                                </span>
+                                <span class="">FRIDAY</span>
+                            </div>
+
+                            <hr class="vr m-sm-2  bg-warning">
+
+                            <div class="fs-4 m-0">
+                                <span>MAY <br> 2023</span>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Venue-middle -->
+                <div class="venue-middle my-3 light-red">
+                    <p class="px-5">
+                        NEW YORK • LONDON • DUBAI • HONG KONG • SINGAPORE • BANGKOK • ST KITTS & NEVIS • GLOBAL MUMBAI •
+                        DELHI • BENGALURU • HYDERABAD • CHENNAI • KOLKATA • PUNE • AHMEDABAD • INDORE • SURAT
+                    </p>
+                </div>
+
+                <!-- venue-bottom -->
+                <div class="venue-bottom">
+                    <div class="row px-md-3 links-container align-items-baseline">
+                        <!-- Website -->
+                        <div class="website col-2 text-start">
+                            <a href="#">www.dellaleaders.com</a>
+                        </div>
+
+                        <!-- Social links -->
+                        <div class="social col-10 text-end">
+                            <p class="">
+                                <!-- LinkedIn -->
+                                <span>
+                                    <a href="#" class="p-0">
+                                        <img src="https://www.huiledivine.com/wp-content/uploads/2014/12/linkedin.png"
+                                            width="23" class="img-fluid"
+                                            alt="linkedin_dellaleaders"><span>dellaleaders</span>
+                                    </a>
+                                </span>
+
+                                <!-- Instagram -->
+                                <span>
+                                    <a href="#" class="p-0">
+                                        <img src="https://cdn.freebiesupply.com/images/large/2x/instagram-icon-white-on-black.png"
+                                            width="23" class="img-fluid"
+                                            alt="Instagram_dellaleaders"><span>dellaleaders</span>
+                                    </a>
+                                </span>
+
+                                <!-- Youtube -->
+                                <span class="">
+                                    <a href="#" class="m-1 p-0">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIu2vTwENsXw0V_SpJ44n3LcHUu4fZLS27Pw&usqp=CAU"
+                                            width="13" class="img-fluid" alt="youtube_dellaleaders"> <span>Della Leaders
+                                            Club</span>
+                                    </a>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-danger my-5 fs-3">Register Here</button>
+
+            </div>
+
+
+            <!-- Main-bottom -->
+            <div class="main-bottom">
+                <h3 class="text-warning display-5 fw-bold p-2 forum dark-red">DLC Talks</h3>
+
+                <!-- Virtual speaker -->
+                <div class="virtual-speaker cards-container">
+
+                    <!-- Polina -->
+                    <div class="card speaker-card notify-card my-2 bg-secondary mx-3 text-start border border-danger">
+                        <div class="row">
+                            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                <span class="notify-badge">Virtual Speaker</span>
+                                <img src="https://dellaleaders.com/images/assets/polina.png"
+                                    class="img-fluid rounded-start dlc_talk_img" alt="Polina_Groman">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body px-1">
+                                    <p class="text-warning fs-5">DLC Talk</p>
+                                    <p class="fs-5 fw-bold">“How To Scale Your Business By Inculcating Happiness Within
+                                        Your Team?”</p>
+                                    <h5 class="card-title fs-4 fw-900 mb-0">Polina Groman</h5>
+                                    <p class="mb-0">Chief Happiness Officer <br> Gro International</p>
+                                    <p>DLC Member</p>
+                                    <p>New York Chapter</p>
+                                    <p class="card-text fw-bold">Polina is a Global, award winning high performing,
+                                        strategic
+                                        advisor, former Wall Street Executive turned consciousness leadership coach. She
+                                        is also a Founding Member of nationwidereos.com She is focused on helping
+                                        visionary CEO’s & Influencers authentically align with their unique voice and
+                                        leverage their personal story to win new market shares.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DAVID -->
+                    <div class="card speaker-card notify-card my-2 bg-secondary mx-3 text-start border border-danger">
+                        <div class="row">
+                            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                <span class="notify-badge">Virtual Speaker</span>
+                                <img src="https://dellaleaders.com/images/assets/david.png"
+                                    class="img-fluid rounded-start dlc_talk_img" alt="David_Meltzer">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body px-1">
+                                    <p class="text-warning fs-5">DLC Talk</p>
+                                    <p class="fs-5 fw-bold">“Helping Visionary Leaders Become Iconic Leaders”</p>
+                                    <h5 class="card-title fs-4 fw-900 mb-0">David Meltzer</h5>
+                                    <p class="mb-0">Author, Co- Founder <br> Sports 1 Marketing</p>
+                                    <p>DLC Member</p>
+                                    <p>New York Chapter</p>
+                                    <p class="card-text fw-bold">Formerly served as CEO of the renowned Leigh (“Lee”)
+                                        Steinberg
+                                        Sports & Entertainment agency, which was the inspiration for the movie Jerry
+                                        Maguire, his life’s mission is to empower OVER 1 BILLION people to be happy. He
+                                        has been identified as one of the Top 5 Keynote Speakers by Forbes and
+                                        Entrepreneur Magazine. He is an author, philanthropist who has been awared as
+                                        “Sports Humanitarian of the Year” and "Gamchanger of the Year" award as well.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="fs-4 mt-3 mb-1 py-2 dark-red">DLC Panel Discussion:<br>
+                        "Your hapiness Is Our Business"</h5>
+
+                    <!-- S ‘VENKY’ -->
+                    <div class="card speaker-card notify-card my-2 bg-secondary mx-3 text-start border border-danger">
+                        <div class="row">
+                            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                <span class="notify-badge">Virtual Speaker</span>
+                                <img src="https://dellaleaders.com/images/assets/venky.png"
+                                    class="img-fluid rounded-start dlc_talk_img" alt="S_‘Venky’_Venkatesh">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-1">
+                                    <p class="text-warning fs-5">DLC Panel Discussion</p>
+                                    <h5 class="card-title fs-4 fw-900 mb-0">S ‘Venky’ Venkatesh</h5>
+                                    <p class="mb-0">Member-Group Management Board <br> & President-Group HR</p>
+                                    <p>RPG Group</p>
+                                    <p>Mumbai Chapter</p>
+                                    <p class="card-text fw-bold">Venky holds 36 years of experience across MNCs,
+                                        Diversified
+                                        Indian Business Groups, Private Equity & Consulting. Taking care of RPG group's
+                                        over 30000 employees, he is also a member of the Management Board of the Group,
+                                        along with 4 CEOs and the Group CFO.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sanjay_Muthal -->
+                    <div class="card speaker-card notify-card my-2 bg-secondary mx-3 text-start border border-danger">
+                        <div class="row">
+                            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                <span class="notify-badge">Physical Speaker</span>
+                                <img src="https://dellaleaders.com/images/assets/sanjay.png"
+                                    class="img-fluid rounded-start dlc_talk_img" alt="Sanjay_Muthal">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-1">
+                                    <p class="text-warning fs-5">DLC Panel Discussion</p>
+                                    <h5 class="card-title fs-5 fw-bold mb-0">Sanjay Muthal</h5>
+                                    <p class="mb-0">CEO</p>
+                                    <p class="mb-0">Kontempore Leadership & Business Solutions</p>
+                                    <p>DLC Member</p>
+                                    <p>Mumbai Chapter</p>
+                                    <p class="card-text fw-bold">A globally renowned Influential HR leader with over
+                                        three
+                                        decades of Corporate HR, Consulting and Executive Search experience, he has been
+                                        listed in ‘50 Most Influential HR
+                                        Leaders in India’ by Business Standard amongst other numerous awards. He also
+                                        serves as an independent director on the board of LIC Mutual Fund AMC.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- JIMMY_MISTRY -->
+                    <div class="card speaker-card notify-card my-2 bg-secondary mx-3 text-start border border-danger">
+                        <div class="row">
+                            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                                <span class="notify-badge">Physical Speaker</span>
+                                <img src="https://dellaleaders.com/images/assets/jimmy_mistry.png"
+                                    class="img-fluid rounded-start dlc_talk_img" alt="JIMMY_MISTRY">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body p-1">
+                                    <p class="text-warning fs-5">DLC Panel Discussion</p>
+                                    <p class="text-warning fw-bold">Moderate & Host</p>
+                                    <h5 class="card-title fs-4 fw-900 mb-0">Jimmy Mistry</h5>
+                                    <p class="mb-0">Founder & CEO</p>
+                                    <p>Della Leaders Club</p>
+                                    <p>Mumbai Chapter</p>
+                                    <p class="card-text fw-bold">Jimmy Mistry is a Designer, Hotelier, Adventurer & Real
+                                        Estate
+                                        Developer. Being a first -generation serial entrepreneur, he realized how lonely
+                                        & difficult the journey can be and this gives a headway and conceptualization to
+                                        Della Leaders Club (DLC). Jimmy’s superpower lies in his ability to bring some
+                                        of the world’s most powerful likeminded men & Women of the eminence aligned to a
+                                        common vision to act as a catalyst to drive people from a “Life of success to a
+                                        life of significance”</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+
+        <!-- Footer -->
+        <footer class="my-5">
+
+            <!-- Footer-top -->
+            <div class="footer-top">
+                <div class="row align-items-center px-md-3">
+                    <div class="col-8 col-sm-8 text-start">
+                        <p class="m-0">Speaker Sessions Start at 7:00 pm followed by</p>
+
+                        <p class="text-warning forum fs-2 m-0">Dinner, Drinks & Live Music</p>
+
+                        <p class="fw-bold m-0">Venue: DLC HQ & Studios, Della Tower, Dadar E, Mumbai</p>
+                    </div>
+
+                    <div class="col-4 col-sm-4 text-end">
+                        <p class="">
+                            <button class="btn dark-red border border-secondary border-3 rounded-pill">
+                                <a href="#">REGISTER HERE</a>
+                            </button>
+                        </p>
+
+                        <p class="">
+                            Membership Experiences <br> +91 9000054411
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer-middle -->
+            <div class="footer-middle my-3">
+                <p class="px-5 light-red">
+                    NEW YORK • LONDON • DUBAI • HONG KONG • SINGAPORE • BANGKOK • ST KITTS & NEVIS • GLOBAL MUMBAI •
+                    DELHI • BENGALURU • HYDERABAD • CHENNAI • KOLKATA • PUNE • AHMEDABAD • INDORE • SURAT
+                </p>
+            </div>
+
+            <!-- Footer-bottom -->
+            <div class="footer-bottom">
+                <div class="row px-md-3 links-container align-items-baseline">
+                    <!-- Website -->
+                    <div class="website col-2 text-start">
+                        <a href="#">www.dellaleaders.com</a>
+                    </div>
+
+                    <!-- Social links -->
+                    <div class="social col-10 text-end">
+                        <p class="">
+                            <!-- LinkedIn -->
+                            <span>
+                                <a href="#" class="p-0">
+                                    <img src="https://www.huiledivine.com/wp-content/uploads/2014/12/linkedin.png"
+                                        width="23" class="img-fluid"
+                                        alt="linkedin_dellaleaders"><span>dellaleaders</span>
+                                </a>
+                            </span>
+
+                            <!-- Instagram -->
+                            <span>
+                                <a href="#" class="p-0">
+                                    <img src="https://cdn.freebiesupply.com/images/large/2x/instagram-icon-white-on-black.png"
+                                        width="23" class="img-fluid"
+                                        alt="Instagram_dellaleaders"><span>dellaleaders</span>
+                                </a>
+                            </span>
+
+                            <!-- Youtube -->
+                            <span class="">
+                                <a href="#" class="m-1 p-0">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIu2vTwENsXw0V_SpJ44n3LcHUu4fZLS27Pw&usqp=CAU"
+                                        width="13" class="img-fluid" alt="youtube_dellaleaders"> <span>Della Leaders
+                                        Club</span>
+                                </a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Bootstrap script for responsive webdesign-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+        </script>
+
+
+    <!-- Fontawesome script -->
+    <script src="https://kit.fontawesome.com/41666327eb.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
